@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+    <aftercreatednewproduct_index_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="aftercreatednewproduct/newproducts" name="block_newproducts" template="aftercreatednewproduct/newproducts.phtml" />
+        </reference>
+    </aftercreatednewproduct_index_index>
+</layout>

@@ -1,4 +1,4 @@
-# li_magento
+li_magento
 
 Path "li_magento/app/etc" must be writable.
 Path "li_magento/media" must be writable.

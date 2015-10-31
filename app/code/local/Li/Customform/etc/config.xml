@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Li_Customform>
+            <version>0.0.1</version>
+        </Li_Customform>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <customform before="Mage_Adminhtml">Li_Customform_Adminhtml</customform>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <global>
+        <blocks>
+            <customform>
+                <class>Li_Customform_Block</class>
+            </customform>
+        </blocks>
+        <helpers>
+            <customform>
+                <class>Li_Customform_Helper</class>
+            </customform>
+        </helpers>
+        <models>
+            <customform>
+                <class>Li_Customform_Model</class>
+            </customform>
+            <!--for database-->
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <customform>
+                <use>standard</use>
+                <args>
+                    <module>Li_Customform</module>
+                    <frontName>customform</frontName>
+                </args>
+            </customform>
+        </routers>
+        <layout>
+            <updates>
+                <customform>
+                    <!--file in theme-->
+                    <file>customform.xml</file>
+                </customform>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Li_Customform>
+                    <files>
+                        <default>Li_Customform.csv</default>
+                    </files>
+                </Li_Customform>
+            </modules>
+        </translate>
+    </frontend>
+</config>

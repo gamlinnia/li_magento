@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Li_Aftercreatednewproduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Li_Aftercreatednewproduct>
+    </modules>
+</config>
