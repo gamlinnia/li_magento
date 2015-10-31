@@ -16,6 +16,7 @@ class Li_Aftercreatednewproduct_Model_Observer {
         $product = clone $observer->getEvent()->getProduct();
         $originalStore = $product->getStoreId();
         Mage::log($product->debug(), null, 'customEvent.log');
+        Mage::log($observer->getEvent()->debug(), null, 'event.log');
     }
 
 }
