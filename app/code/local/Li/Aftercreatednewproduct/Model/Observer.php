@@ -13,11 +13,9 @@ class Li_Aftercreatednewproduct_Model_Observer {
     public function savedProductCustomCallapi (Varien_Event_Observer $observer) {
         Mage::log('run function savedProductCustomCallapi', null, 'customEvent.log');
         /** @var $product Mage_Catalog_Model_Product */
-        $product = clone $observer->getProduct();
-        $event = clone $observer->getEvent();
+        $product = clone $observer->getEvent()->getProduct();
         $originalStore = $product->getStoreId();
         Mage::log($product->debug(), null, 'customEvent.log');
-        Mage::log($event, null, 'customEvent.log');
     }
 
 }
