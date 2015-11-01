@@ -13,3 +13,11 @@ Path "li_magento/media/xmlconnect/system/ok.gif" must be writable.
 Path "li_magento/media/xmlconnect/custom" must be writable.
 Path "li_magento/media/xmlconnect/custom/ok.gif" must be writable.
 Path "li_magento/media/downloadable" must be writable.
+
+
+******************** Unknown cipher in list: TLSv1 ********************
+
+In downloader/lib/Mage/HTTP/Client/Curl.php, try changing:
+$this->curlOption(CURLOPT_SSL_CIPHER_LIST, 'TLSv1');
+to
+$this->curlOption(CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1);
