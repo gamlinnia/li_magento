@@ -19,7 +19,7 @@ class Li_Schedulejob_Model_Observer {
             /* @var $indexCollection Mage_Index_Model_Resource_Process_Collection */
             $indexCollection = Mage::getModel('index/process')->getCollection();
             foreach ($indexCollection as $index) {
-                Mage::log('Rebuild indexes:' . $type, null, 'jobs.log');
+                Mage::log('Rebuild indexes:' . $index, null, 'jobs.log');
                 /* @var $index Mage_Index_Model_Process */
                 $index->reindexAll();
             }
