@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Li_Schedulejob>
+            <version>0.0.1</version>
+        </Li_Schedulejob>
+    </modules>
+    <global>
+        <blocks>
+            <schedulejob>
+                <class>Li_Schedulejob_Block</class>
+            </schedulejob>
+        </blocks>
+        <helpers>
+            <schedulejob>
+                <class>Li_Schedulejob_Helper</class>
+            </schedulejob>
+        </helpers>
+        <models>
+            <schedulejob>
+                <class>Li_Schedulejob_Model</class>
+            </schedulejob>
+        </models>
+    </global>
+</config>
