@@ -10,7 +10,7 @@
         <jobs>
             <schedulejob_do_schedules>
                 <schedule>
-                    <cron_expr>* 10 * * *</cron_expr>
+                    <cron_expr>*/5 * * * *</cron_expr>
                 </schedule>
                 <run>
                     <model>schedulejob/observer::doSchedules</model>
