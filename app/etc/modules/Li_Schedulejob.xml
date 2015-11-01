@@ -6,16 +6,4 @@
             <codePool>local</codePool>
         </Li_Schedulejob>
     </modules>
-    <crontab>
-        <jobs>
-            <schedulejob_do_schedules>
-                <schedule>
-                    <cron_expr>*/5 * * * *</cron_expr>
-                </schedule>
-                <run>
-                    <model>schedulejob/observer::doSchedules</model>
-                </run>
-            </schedulejob_do_schedules>
-        </jobs>
-    </crontab>
 </config>
