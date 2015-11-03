@@ -1,15 +1,15 @@
 <?php
 
 class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
+
     public function indexAction () {
-        echo get_class($mailTemplate = Mage::getModel('core/email_template'));
-        die();
         $this->loadLayout();
         /*block defined in design_layout*/
         $this->getLayout()->getBlock('block_newform')
             ->setFormAction( Mage::getUrl('*/*/post') );
         $this->renderLayout();
     }
+
     public function secondAction () {
         $this->loadLayout();
         $this->renderLayout();
