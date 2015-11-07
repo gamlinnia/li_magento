@@ -36,7 +36,7 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function postAction () {
         $post = $this->getRequest()->getPost();
-        var_dump($post);
+        Zend_Debug::dump($post);
 
         echo 'XML_PATH_EMAIL_TEMPLATE' . Mage::getStoreConfig(self::XML_PATH_EMAIL_TEMPLATE) . PHP_EOL;
         echo 'XML_PATH_EMAIL_SENDER' . Mage::getStoreConfig(self::XML_PATH_EMAIL_SENDER) . PHP_EOL;
@@ -72,16 +72,41 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
                     throw new Exception();
                 }
 
-                var_dump($error);
+                $mailTemplate = Mage::getModel('core/email_template');
+                /* @var $mailTemplate Mage_Core_Model_Email_Template */
+                $mailTemplate->setDesignConfig(array('area' => 'frontend'))
+                    ->setReplyTo($post['email'])
+                    ->sendTransactional(
+                        /*
+                         * default XML_PATH_EMAIL_TEMPLATE => contacts_email_email_template
+                         * default XML_PATH_EMAIL_SENDER => general
+                         * default XML_PATH_EMAIL_RECIPIENT => thisisbook@taiwan-motors.com.tw
+                         * */
+                        Mage::getStoreConfig(self::XML_PATH_EMAIL_TEMPLATE),
+                        Mage::getStoreConfig(self::XML_PATH_EMAIL_SENDER),
+                        Mage::getStoreConfig(self::XML_PATH_EMAIL_RECIPIENT),
+                        null,
+                        array('data' => $postObject)
+                    );
+                if (!$mailTemplate->getSentSuccess()) {
+                    throw new Exception();
+                }
 
+                $translate->setTranslateInline(true);
+
+                Mage::getSingleton('customer/session')->addSuccess(Mage::helper('contacts')->__('Your inquiry was submitted and will be responded to as soon as possible. Thank you for contacting us.'));
+                $this->_redirect('*/*/');
+
+                return;
             } catch (Exception $e) {
                 $translate->setTranslateInline(true);
 
                 Mage::getSingleton('customer/session')->addError(Mage::helper('contacts')->__('Unable to submit your request. Please, try again later'));
+                $this->_redirect('*/*/');
+                return;
             }
-
         } else {
-            echo 'oh no!';
+            $this->_redirect('*/*/');
         }
     }
 
