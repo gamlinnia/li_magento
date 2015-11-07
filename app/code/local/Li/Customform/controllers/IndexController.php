@@ -2,6 +2,11 @@
 
 class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
 
+    const XML_PATH_EMAIL_RECIPIENT  = 'contacts/email/recipient_email';
+    const XML_PATH_EMAIL_SENDER     = 'contacts/email/sender_email_identity';
+    const XML_PATH_EMAIL_TEMPLATE   = 'contacts/email/email_template';
+    const XML_PATH_ENABLED          = 'contacts/contacts/enabled';
+
     public function indexAction () {
         $this->loadLayout();
         /*block defined in design_layout*/
@@ -32,6 +37,11 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
     public function postAction () {
         $post = $this->getRequest()->getPost();
         var_dump($post);
+
+        echo 'XML_PATH_EMAIL_TEMPLATE' . Mage::getStoreConfig(self::XML_PATH_EMAIL_TEMPLATE) . PHP_EOL;
+        echo 'XML_PATH_EMAIL_SENDER' . Mage::getStoreConfig(self::XML_PATH_EMAIL_SENDER) . PHP_EOL;
+        echo 'XML_PATH_EMAIL_RECIPIENT' . Mage::getStoreConfig(self::XML_PATH_EMAIL_RECIPIENT) . PHP_EOL;
+
         if ($post) {
             $translate = Mage::getSingleton('core/translate');
             /* @var $translate Mage_Core_Model_Translate */
