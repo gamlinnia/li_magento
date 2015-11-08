@@ -30,9 +30,39 @@
         <models>
             <customform>
                 <class>Li_Customform_Model</class>
+                <resourceModel>customform_resource</resourceModel>
             </customform>
             <!--for database-->
+            <customform_resource>
+                <class>Li_Customform_Model_Resource</class>
+                <entities>
+                    <subscription>
+                        <table>customform_subscription</table>
+                    </subscription>
+                </entities>
+            </customform_resource>
         </models>
+        <resources>
+            <customform_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </customform_read>
+            <customform_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </customform_write>
+            <customform_setup>
+                <setup>
+                    <module>Li_Customform</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </customform_setup>
+        </resources>
     </global>
     <frontend>
         <routers>
