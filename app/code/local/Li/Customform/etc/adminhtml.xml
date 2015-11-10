@@ -21,7 +21,7 @@
                 <children>
                     <system>
                         <children>
-                            <customform>
+                            <customform translate="title" module="customform">
                                 <title>Customform Index Page</title>
                                 <sort_order>10</sort_order>
                             </customform>
