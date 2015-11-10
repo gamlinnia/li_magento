@@ -35,23 +35,4 @@
             </groups>
         </customform>
     </sections>
-    <acl>
-        <resources>
-            <admin>
-                <children>
-                    <system>
-                        <children>
-                            <config>
-                                <children>
-                                    <customform translate="title" module="customform">
-                                        <title>Customform Section</title>
-                                    </customform>
-                                </children>
-                            </config>
-                        </children>
-                    </system>
-                </children>
-            </admin>
-        </resources>
-    </acl>
 </config>
