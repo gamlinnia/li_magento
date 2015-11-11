@@ -72,7 +72,8 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
                 $cusotmform = Mage::getModel('customform/subscription');
                 $cusotmform->setData('name', trim($post['name']))
                 ->setData('email', trim($post['email']))
-                ->setData('comment', trim($post['comment']));
+                ->setData('comment', trim($post['comment']))
+                ->setData('updated_at', strtotime('now'));
                 $cusotmform->save();
 
                 $mailTemplate = Mage::getModel('core/email_template');
