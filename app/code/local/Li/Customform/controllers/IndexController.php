@@ -73,6 +73,7 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
                 $cusotmform->setData('name', trim($post['name']))
                 ->setData('email', trim($post['email']))
                 ->setData('comment', trim($post['comment']))
+                ->setData('created_at', strtotime('now'))
                 ->setData('updated_at', strtotime('now'));
                 $cusotmform->save();
 
