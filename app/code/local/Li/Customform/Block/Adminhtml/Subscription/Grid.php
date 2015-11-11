@@ -17,6 +17,15 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
     }
 
     protected function _prepareColumns () {
+
+        $this->addColumn('itemCheckbox', array(
+            'index'      => 'subscription_id',
+            'type'       => 'checkbox',
+            'width'      => 20,
+            'sortable'   => false
+        ));
+
+
         $this->addColumn('subscription_id', array(
             'index' => 'subscription_id',
             'header' => Mage::helper('customform')->__('subscription_id'),
