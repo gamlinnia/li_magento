@@ -10,4 +10,8 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
         $this->renderLayout();
     }
 
+    protected function _isAllowed() {
+        return Mage::getSingleton('admin/session')->isAllowed('customform/adminhtml_subscription');
+    }
+
 }
