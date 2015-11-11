@@ -10,6 +10,7 @@
             <adminhtml>
                 <args>
                     <modules>
+                        <!-- url: admin/{{module_name}}_{{action_controller}} -->
                         <customform before="Mage_Adminhtml">Li_Customform_Adminhtml</customform>
                     </modules>
                 </args>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- configure the extra menu item in Admin menu -->
+    <menu>
+        <system>
+            <children>
+                <customform translate="title" module="customform">
+                    <title>customform</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/customform_index</action>
+                </customform>
+            </children>
+        </system>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <customform translate="title" module="customform">
+                                <title>Customform Index Page</title>
+                                <sort_order>10</sort_order>
+                            </customform>
+                            <config>
+                                <children>
+                                    <customform translate="title" module="customform">
+                                        <title>Customform Section</title>
+                                    </customform>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
