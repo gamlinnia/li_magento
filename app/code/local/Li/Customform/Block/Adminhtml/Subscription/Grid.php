@@ -37,7 +37,39 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
             'sortable' => false
         ));
 
+        $this->addColumn('created_at', array(
+            'index' => 'created_at',
+            'header'=> Mage::helper('customform')->__('Created At'),
+            'type' => 'datetime',
+            'sortable' => true,
+            'width' => '150px'
+        ));
+
+        $this->addColumn('status', array(
+            'index' => 'status',
+            'header' => Mage::helper('customform')->__('Status'),
+            'sortable' => true,
+            'frame_callback' => array($this, 'prepareStatusLayout'),
+            'width' => '150px'
+        ));
+
         return parent::_prepareColumns();
+    }
+
+    public function prepareStatusLayout ($value) {
+        $class = '';
+        switch ($value) {
+            case 'pending' :
+                $class = 'grid-severity-notice';
+                break;
+            case 'approved' :
+                $class = 'grid-severity-major';
+                break;
+            case 'declined' :
+                $class = 'grid-severity-critical';
+                break;
+        }
+        return '<span class="' . $class . '"><span>' . $class . '</span></span>';
     }
 
     public function getGridUrl () {

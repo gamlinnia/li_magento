@@ -3,7 +3,7 @@
 class Li_Customform_Block_Adminhtml_Subscription extends Mage_Adminhtml_Block_Widget_Grid_Container {
 
     public function __construct () {
-        $this->_headerText = Mage::helper('customform')->__('customform Subscription');
+        $this->_headerText = Mage::helper('customform')->__('Customform Subscription');
 
         $this->_blockGroup = 'customform';
         $this->_controller = 'adminhtml_subscription';
