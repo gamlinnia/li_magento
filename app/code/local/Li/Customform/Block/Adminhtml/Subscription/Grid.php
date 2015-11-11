@@ -69,7 +69,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
                 $class = 'grid-severity-critical';
                 break;
         }
-        return '<span class="' . $class . '"><span>' . $class . '</span></span>';
+        return '<span class="' . $class . '"><span>' . $value . '</span></span>';
     }
 
     public function getGridUrl () {
