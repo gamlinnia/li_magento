@@ -11,7 +11,7 @@ class Li_Customform_Block_Adminhtml_Subscription extends Mage_Adminhtml_Block_Wi
         parent::__construct();
     }
 
-    protected function __prepareLayout () {
+    protected function _prepareLayout () {
         $this->_removeButton('add');
 
         return parent::_prepareLayout();
