@@ -18,12 +18,9 @@ $table = $installer->getConnection()
     ->addColumn('updated_at', Varien_Db_Ddl_Table::TYPE_TIMESTAMP, null, array(
         'nullable' => false
     ), 'Updated at')
-    ->addColumn('firstname', Varien_Db_Ddl_Table::TYPE_TEXT, 64, array(
+    ->addColumn('name', Varien_Db_Ddl_Table::TYPE_TEXT, 64, array(
         'nullable' => false
-    ), 'First name')
-    ->addColumn('lastname', Varien_Db_Ddl_Table::TYPE_TEXT, 64, array(
-        'nullable' => false
-    ), 'Last name')
+    ), 'Name')
     ->addColumn('email', Varien_Db_Ddl_Table::TYPE_TEXT, 64, array(
         'nullable' => false
     ), 'Email address')
@@ -31,10 +28,10 @@ $table = $installer->getConnection()
         'nullable' => false,
         'default' => 'pending'
     ), 'Status')
-    ->addColumn('message', Varien_Db_Ddl_Table::TYPE_TEXT, '64k', array(
+    ->addColumn('comment', Varien_Db_Ddl_Table::TYPE_TEXT, '64k', array(
         'unsigned' => true,
         'nullable' => false
-    ), 'Subscription notes')
+    ), 'Comment')
     ->addIndex($installer->getIdxName('customform_subscription', array('email')), array('email'))
     ->setComment('CustomForm subscriptions');
 $installer->getConnection()->createTable($table);
