@@ -5,7 +5,7 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
     public function indexAction () {
         $this->loadLayout();
 
-        $this->_addContent($this->getLayout()->createBlock('customform/adminthml_subscription'));
+        $this->_addContent($this->getLayout()->createBlock('customform/adminhtml_subscription'));
 
         $this->renderLayout();
     }
