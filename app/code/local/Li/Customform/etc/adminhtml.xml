@@ -14,6 +14,9 @@
     </menu>
     <acl>
         <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
             <admin>
                 <children>
                     <system>
