@@ -64,13 +64,16 @@ class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
                     $error = true;
                 }
 
-                if (Zend_Validate::is(trim($post['hideit']), 'NotEmpty')) {
-                    $error = true;
-                }
 
                 if ($error) {
                     throw new Exception();
                 }
+
+                $cusotmform = Mage::getModel('customform/subscription');
+                $cusotmform->setData('name', trim($post['name']))
+                ->setData('email', trim($post['email']))
+                ->setData('comment', trim($post['comment']));
+                $cusotmform->save();
 
                 $mailTemplate = Mage::getModel('core/email_template');
                 /* @var $mailTemplate Mage_Core_Model_Email_Template */
