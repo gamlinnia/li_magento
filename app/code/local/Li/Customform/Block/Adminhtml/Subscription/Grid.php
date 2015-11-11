@@ -40,8 +40,8 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         return parent::_prepareColumns();
     }
 
-    public function getGrid () {
-        return $this->getUrl('*/*//grid', array(
+    public function getGridUrl () {
+        return $this->getUrl('*/*/grid', array(
             '_current' => true
         ));
     }
