@@ -61,6 +61,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
 
     protected function _prepareMassaction() {
         $this->setMassactionIdField('subscription_id');
+        return $this;
     }
 
     public function prepareStatusLayout ($value) {
