@@ -72,6 +72,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
 
         $statuses = Mage::getSingleton('catalog/product_status')->getOptionArray();
 
+        /* 塞進一個空白的option */
         array_unshift($statuses, array('label'=>'', 'value'=>''));
         $this->getMassactionBlock()->addItem('status', array(
             'label'=> Mage::helper('catalog')->__('Change status'),
