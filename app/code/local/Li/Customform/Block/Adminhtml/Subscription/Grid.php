@@ -59,6 +59,10 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         return parent::_prepareColumns();
     }
 
+    protected function _prepareMassaction() {
+        $this->setMassactionIdField('subscription_id');
+    }
+
     public function prepareStatusLayout ($value) {
         $class = '';
         switch ($value) {
@@ -81,4 +85,9 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         ));
     }
 
+    public function getRowUrl($row) {
+        return $this->getUrl('*/*/edit', array(
+                'id'=>$row->getId())
+        );
+    }
 }
