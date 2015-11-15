@@ -12,6 +12,8 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
 
     public function editAction () {
         echo 'edit action';
+        $post = $this->getRequest()->getPost();
+        var_dump($post);
         if ($this->_getRequest()->isPost()) {
             echo 'got post' . PHP_EOL;
         }
