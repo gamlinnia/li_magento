@@ -12,7 +12,7 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
 
     public function editAction () {
         echo 'edit action';
-        $productId  = (int) $this->getRequest()->getParam('subscription_id');
+        $productId  = (int) $this->getRequest()->getParam('id');
         var_dump($productId);
     }
 
