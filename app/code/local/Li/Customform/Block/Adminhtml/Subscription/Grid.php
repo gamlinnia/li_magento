@@ -22,7 +22,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
 
         $this->addColumn('subscription_id', array(
             'index' => 'subscription_id',
-            'header' => Mage::helper('customform')->__('subscription_id'),
+            'header' => Mage::helper('customform')->__('ID'),
             'type' => 'number',
             'sortable' => true,
             'width' => '100px'
@@ -76,7 +76,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         array_unshift($statuses, array('label'=>'', 'value'=>''));
         $this->getMassactionBlock()->addItem('status', array(
             'label'=> Mage::helper('catalog')->__('Change status'),
-            'url'  => $this->getUrl('*/*/massStatus', array('_current'=>true)),
+            'url'  => $this->getUrl('*/*/massStatus', array('_current'=>true)),     //  choose to have 2nd option
             'additional' => array(
                 'visibility' => array(
                     'name' => 'status',

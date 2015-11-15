@@ -10,6 +10,10 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
         $this->renderLayout();
     }
 
+    public function editAction () {
+        echo 'edit action';
+    }
+
     /* this method is for acl to grant admin privilege */
     protected function _isAllowed() {
         /* pass menu tree to isAllowed method */

@@ -17,4 +17,11 @@ class Li_Customform_Block_Adminhtml_Subscription extends Mage_Adminhtml_Block_Wi
         return parent::_prepareLayout();
     }
 
+    public function isSingleStoreMode() {
+        if (!Mage::app()->isSingleStoreMode()) {
+            return false;
+        }
+        return true;
+    }
+
 }
