@@ -12,6 +12,7 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
 
     public function editAction () {
         echo 'edit action';
+        var_dump($this->_getRequest()->getParam('custom_form', null));
     }
 
     /* this method is for acl to grant admin privilege */
