@@ -17,7 +17,7 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
         if ($this->_getRequest()->isPost()) {
             echo 'got post' . PHP_EOL;
         }
-        var_dump($this->_getRequest()->getParam('custom_form'));
+        var_dump($this->_getRequest()->getParam('subscription_grid'));
     }
 
     /* this method is for acl to grant admin privilege */
