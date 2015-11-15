@@ -62,7 +62,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
     protected function _prepareMassaction() {
         $this->setMassactionIdField('subscription_id');
 
-        $this->getMassactionBlock()->setFormFieldName('custom_form');
+        $this->getMassactionBlock()->setFormFieldName('custom_form_id');
 
         $this->getMassactionBlock()->addItem('delete', array(
             'label'=> Mage::helper('catalog')->__('Delete'),
