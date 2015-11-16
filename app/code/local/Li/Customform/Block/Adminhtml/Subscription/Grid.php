@@ -10,6 +10,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         $this->setDefaultDir('DESC');
         $this->setSaveParametersInSession(true);
         $this->setUseAjax(true);
+        $this->setVarNameFilter('subscription_filter');
     }
 
     protected function _prepareCollection () {
