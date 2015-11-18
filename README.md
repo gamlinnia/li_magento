@@ -15,6 +15,8 @@ Path "li_magento/media/xmlconnect/custom/ok.gif" must be writable.
 Path "li_magento/media/downloadable" must be writable.
 
 
+In php.ini, the max_post was set to 100M to enable the uploader of product image.
+
 ******************** Unknown cipher in list: TLSv1 ********************
 
 In downloader/lib/Mage/HTTP/Client/Curl.php, try changing:
