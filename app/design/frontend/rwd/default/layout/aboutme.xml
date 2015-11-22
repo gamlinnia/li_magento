@@ -12,7 +12,7 @@
         </reference>
         <update handle="cms_menu"/>
         <reference name="content">
-            <block type="aboutme/aboutme" name="block_aboutme" template="aboutme/newform.phtml" />
+            <block type="aboutme/aboutme" name="block_aboutme" template="aboutme/aboutme.phtml" />
         </reference>
     </aboutme_index_index>
 </layout>
