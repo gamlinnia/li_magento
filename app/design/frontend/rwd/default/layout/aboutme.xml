@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout>
     <aboutme_index_index>
-        <remoev name="header" />
+        <remove name="header" />
         <reference name="head">
             <action method="setTitle" translate="title" module="aboutme"><title>About Me</title></action>
         </reference>
