@@ -10,7 +10,7 @@ class Li_Aboutme_IndexController extends Mage_Core_Controller_Front_Action {
     public function indexAction () {
         $this->loadLayout();
         /*block defined in design_layout*/
-        $this->getLayout()->getBlock('block_aboutme')->setFormAction( Mage::getUrl('*/*/post') );
+        $this->getLayout()->getBlock('block_aboutme');
         $this->renderLayout();
     }
 
@@ -64,14 +64,14 @@ class Li_Aboutme_IndexController extends Mage_Core_Controller_Front_Action {
 
                 $translate->setTranslateInline(true);
 
-//                Mage::getSingleton('customer/session')->addSuccess(Mage::helper('aboutme')->__('Your inquiry was submitted and will be responded to as soon as possible. Thank you for contacting us.'));
+                Mage::getSingleton('customer/session')->addSuccess(Mage::helper('aboutme')->__('Your inquiry was submitted and will be responded to as soon as possible. Thank you for contacting us.'));
                 $this->_redirect('*/*/');
 
                 return;
             } catch (Exception $e) {
                 $translate->setTranslateInline(true);
 
-//                Mage::getSingleton('customer/session')->addError(Mage::helper('aboutme')->__('Unable to submit your request. Please, try again later'));
+                Mage::getSingleton('customer/session')->addError(Mage::helper('aboutme')->__('Unable to submit your request. Please, try again later'));
                 $this->_redirect('*/*/');
                 return;
             }
