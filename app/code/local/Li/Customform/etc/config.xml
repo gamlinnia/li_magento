@@ -17,9 +17,6 @@
             </adminhtml>
         </routers>
     </admin>
-    <default>
-        <remove name="store_language" />
-    </default>
     <global>
         <blocks>
             <customform>
@@ -79,6 +76,9 @@
             </customform>
         </routers>
         <layout>
+            <default>
+                <remove name="store_language" />
+            </default>
             <updates>
                 <customform>
                     <!--file in theme-->
