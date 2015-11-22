@@ -77,9 +77,6 @@
         </routers>
         <layout>
             <updates>
-                <default>
-                    <remove name="store_language" />
-                </default>
                 <customform>
                     <!--file in theme-->
                     <file>customform.xml</file>
