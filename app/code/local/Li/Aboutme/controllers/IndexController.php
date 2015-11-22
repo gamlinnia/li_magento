@@ -52,13 +52,13 @@ class Li_Aboutme_IndexController extends Mage_Core_Controller_Front_Action {
                      * default XML_PATH_EMAIL_SENDER => general
                      * default XML_PATH_EMAIL_RECIPIENT => thisisbook@taiwan-motors.com.tw
                      * */
-                        Mage::getModel('core/email_template')->loadByCode('aboutme'),
+                        Mage::getModel('core/email_template')->loadByCode('aboutme')->getTemplateId(),
                         Mage::getStoreConfig(self::XML_PATH_EMAIL_SENDER),
                         Mage::getStoreConfig(self::XML_PATH_EMAIL_RECIPIENT),
                         null,
                         array('data' => $postObject)
                     );
-                Zend_Debug::dump(Mage::getModel('core/email_template')->loadByCode('aboutme'));
+                Zend_Debug::dump(Mage::getModel('core/email_template')->loadByCode('aboutme')->getTemplateId());
                 if (!$mailTemplate->getSentSuccess()) {
                     throw new Exception();
                 }
