@@ -81,11 +81,6 @@
                     <!--file in theme-->
                     <file>customform.xml</file>
                 </customform>
-                <customer_account>
-                    <reference name="customer_account_navigation">
-                        <action method="removeLink"><name>recurring_profiles</name></action>
-                    </reference>
-                </customer_account>
             </updates>
         </layout>
         <translate>
