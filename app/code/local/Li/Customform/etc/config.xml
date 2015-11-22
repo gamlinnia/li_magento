@@ -93,4 +93,7 @@
             </modules>
         </translate>
     </frontend>
+    <default>
+        
+    </default>
 </config>
