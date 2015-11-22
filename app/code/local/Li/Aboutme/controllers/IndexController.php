@@ -58,6 +58,7 @@ class Li_Aboutme_IndexController extends Mage_Core_Controller_Front_Action {
                         null,
                         array('data' => $postObject)
                     );
+                Zend_Debug::dump(Mage::getModel('core/email_template')->loadByCode('aboutme'));
                 if (!$mailTemplate->getSentSuccess()) {
                     throw new Exception();
                 }
