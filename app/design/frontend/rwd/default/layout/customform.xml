@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout>
-    <customer_account>
-        <reference name="customer_account_navigation">
-            <action method="removeLink"><name>recurring_profiles</name></action>
-        </reference>
-    </customer_account>
     <customform_index_index>
         <reference name="head">
             <action method="setTitle" translate="title" module="customform"><title>Contact Us</title></action>
