@@ -173,7 +173,7 @@
 "ID","ID"
 "IP Address","IP Address"
 "If you believe this is an error, please contact us at %s","If you believe this is an error, please contact us at %s"
-"If you have an account with us, please log in.","If you have an account with us, please log in."
+"If you have an account with us, please log in.","如果已申請過帳號，請登入。"
 "Invalid attribute option specified for attribute %s (%s), skipping the record.","Invalid attribute option specified for attribute %s (%s), skipping the record."
 "Invalid attribute set specified, skipping the record.","Invalid attribute set specified, skipping the record."
 "Invalid billing address for (%s)","Invalid billing address for (%s)"
