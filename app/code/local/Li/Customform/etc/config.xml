@@ -76,10 +76,10 @@
             </customform>
         </routers>
         <layout>
-            <default>
-                <remove name="store_language" />
-            </default>
             <updates>
+                <default>
+                    <remove name="store_language" />
+                </default>
                 <customform>
                     <!--file in theme-->
                     <file>customform.xml</file>
