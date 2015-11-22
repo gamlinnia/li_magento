@@ -64,6 +64,11 @@
                 </connection>
             </customform_setup>
         </resources>
+        <page>
+            <remove_layouts>
+                <layouts>store_language</layouts>
+            </remove_layouts>
+        </page>
     </global>
     <frontend>
         <routers>
