@@ -52,7 +52,7 @@ class Li_Aboutme_IndexController extends Mage_Core_Controller_Front_Action {
                      * default XML_PATH_EMAIL_SENDER => general
                      * default XML_PATH_EMAIL_RECIPIENT => thisisbook@taiwan-motors.com.tw
                      * */
-                        1,
+                        Mage::getModel('core/email_template')->loadByCode('aboutme'),
                         Mage::getStoreConfig(self::XML_PATH_EMAIL_SENDER),
                         Mage::getStoreConfig(self::XML_PATH_EMAIL_RECIPIENT),
                         null,
