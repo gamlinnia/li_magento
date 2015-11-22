@@ -14,5 +14,6 @@
         <reference name="content">
             <block type="aboutme/aboutme" name="block_aboutme" template="aboutme/aboutme.phtml" />
         </reference>
+        <remove name="footer" />
     </aboutme_index_index>
 </layout>
