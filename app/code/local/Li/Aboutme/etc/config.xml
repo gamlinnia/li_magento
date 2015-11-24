@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Li_Aboutme>
+            <version>0.0.1</version>
+        </Li_Aboutme>
+    </modules>
+    <global>
+        <blocks>
+            <aboutme>
+                <class>Li_Aboutme_Block</class>
+            </aboutme>
+        </blocks>
+        <helpers>
+            <aboutme>
+                <class>Li_Aboutme_Helper</class>
+            </aboutme>
+        </helpers>
+        <models>
+            <aboutme>
+                <class>Li_Aboutme_Model</class>
+            </aboutme>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <aboutme>
+                <use>standard</use>
+                <args>
+                    <module>Li_Aboutme</module>
+                    <frontName>about_me</frontName>
+                </args>
+            </aboutme>
+        </routers>
+        <layout>
+            <updates>
+                <aboutme>
+                    <!--file in theme-->
+                    <file>aboutme.xml</file>
+                </aboutme>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Li_Aboutme>
+                    <files>
+                        <default>Li_Aboutme.csv</default>
+                    </files>
+                </Li_Aboutme>
+            </modules>
+        </translate>
+    </frontend>
+</config>
