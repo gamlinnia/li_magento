@@ -39,7 +39,7 @@
 "Checking config re-writes have not clashed.","Checking config re-writes have not clashed."
 "Detected overwrite conflict: %s","Detected overwrite conflict: %s"
 "Raw connection test for SMTP options.","Raw connection test for SMTP options."
-"Complete","Complete"
+"Complete","已完成"
 "Failed to connect to SMTP server. Reason: ","Failed to connect to SMTP server. Reason: "
 "This extension requires an outbound SMTP connection on port: ","This extension requires an outbound SMTP connection on port: "
 "Connection to Host SMTP server successful","Connection to Host SMTP server successful"
