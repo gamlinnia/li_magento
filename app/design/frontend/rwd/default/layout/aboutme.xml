@@ -10,7 +10,11 @@
         <reference name="head">
             <action method="setTitle" translate="title" module="aboutme"><title>About Me</title></action>
             <!--<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>-->
+            <!-- jssor slider -->
             <action method="addItem"><type>skin_js</type><name>js/aboutme/jssor.slider.mini.js</name></action>
+            <!-- Pixedelic Camera -->
+            <action method="addItem"><type>skin_js</type><name>js/Camera/camera.min.js</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/Camera/camera.css</name></action>
         </reference>
         <reference name="root">
             <action method="setTemplate">
