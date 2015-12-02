@@ -1,5 +1,14 @@
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 
+<div class="header-language-background">
+    <div class="header-language-container">
+        <div class="store-language-container">
+            <?php echo $this->getChildHtml('store_language') ?>
+        </div>
+    </div>
+</div>
+
+
 <h2>about me template</h2>
 
 <!--$this->getFormAction() => setFormAction( Mage::getUrl('*/*/post') );-->
