@@ -10,6 +10,10 @@
     text-align: right;
 }
 
+.inlineBlock {
+    display: inline-block;
+}
+
 .banner-title {
     color: whitesmoke;
 }
