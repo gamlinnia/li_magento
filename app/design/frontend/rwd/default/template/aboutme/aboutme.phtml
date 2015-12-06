@@ -92,15 +92,15 @@
     function updateMaxHeight() {
         var elementToUpdateMaxHeight = ["div#banner"];
         for (var key in elementToUpdateMaxHeight) {
-            $(elementToUpdateMaxHeight[key]).css({
-                "max-height": $(this).height()
+            jQuery(elementToUpdateMaxHeight[key]).css({
+                "max-height": jQuery(this).height()
             });
         }
     }
 
     jQuery(document).ready(function () {
         //If the User resizes the window, adjust the #container height
-        $(window).on("resize", updateMaxHeight);
+        jQuery(window).on("resize", updateMaxHeight);
     });
 </script>
 
