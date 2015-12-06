@@ -111,10 +111,12 @@
             image_url = image_url.match(/^url\("?(.+?)"?\)$/);
             image.src = image_url[1];
 
-            jQuery(element).css({
-                "height": image.height,
-                "max-height": image.height
-            });
+            if (image.height > 0) {
+                jQuery(element).css({
+                    "height": image.height,
+                    "max-height": image.height
+                });
+            }
         });
     }
 
