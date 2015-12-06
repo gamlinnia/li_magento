@@ -2,7 +2,7 @@
 
 <header>
     <div id="banner">
-        <?php if(count( Mage::app()->getStores() )>1): ?>
+        <?php if(count( $this->getStores() )>1): ?>
             <div class="alignRight">
                 <div class="form-language">
                     <label for="select-language"><?php echo $this->__('Language:') ?></label>
