@@ -18,6 +18,10 @@
     display: none;
 }
 
+.cursorPointer {
+    cursor: pointer;
+}
+
 .form-language label {
     color: whitesmoke;
 }
