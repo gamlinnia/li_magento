@@ -110,7 +110,7 @@
     }
 
     function scrollToTop () {
-        $(window).scroll(function () {
+        $(window).scroll(function (event) {
             if ($(window).scrollTop() > 10) {
                 console.log($(window).scrollTop(), 'more than 10, display');
             } else {
