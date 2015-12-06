@@ -1,6 +1,11 @@
+.alignRight {
+    text-align: right;
+}
+
 div#banner {
     background-image: url("../../images/aboutme/banner_01.jpg");
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
+
