@@ -15,7 +15,7 @@
             <action method="addItem"><type>skin_js</type><name>js/Camera/jquery.mobile.customized.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>css/Camera/camera.css</name></action>
             <!-- custom css for page about me -->
-            <action method="addCss"><stylesheet>css/li_custom.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/aboutme/aboutme.css</stylesheet></action>
         </reference>
         <reference name="root">
             <action method="setTemplate">
