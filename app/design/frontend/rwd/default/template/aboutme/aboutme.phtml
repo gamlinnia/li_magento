@@ -67,7 +67,7 @@
         <button type="submit" title="<?php echo Mage::helper('aboutme')->__('Submit') ?>" class="button"><span><?php echo Mage::helper('aboutme')->__('Submit') ?></span></button>
     </div>
 
-    <div class="pageToTop">
+    <div class="pageToTop displayNone">
         <i class="fa fa-arrow-circle-o-up fa-4x goldenrod"></i>
     </div>
 
@@ -118,8 +118,10 @@
         jQuery(window).scroll(function (event) {
             if (jQuery(window).scrollTop() > 10) {
                 console.log(jQuery(window).scrollTop(), 'more than 10, display');
+                jQuery('.pageToTop').show();
             } else {
                 console.log(jQuery(window).scrollTop(), 'hide');
+                jQuery('.pageToTop').hide();
             }
         });
     }

@@ -14,6 +14,10 @@
     display: inline-block;
 }
 
+.displayNone {
+    display: none;
+}
+
 .form-language label {
     color: whitesmoke;
 }
