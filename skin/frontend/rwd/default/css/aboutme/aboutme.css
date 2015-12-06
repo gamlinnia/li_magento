@@ -2,4 +2,5 @@ div#banner {
     background-image: url("../../images/aboutme/banner_01.jpg");
     background-size: 100% auto;
     background-position: center center;
+    background-repeat: no-repeat;
 }

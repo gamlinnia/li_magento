@@ -99,6 +99,7 @@
     }
 
     jQuery(document).ready(function () {
+        updateMaxHeight();
         //If the User resizes the window, adjust the #container height
         jQuery(window).on("resize", updateMaxHeight);
     });
