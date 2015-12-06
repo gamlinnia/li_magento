@@ -30,3 +30,8 @@ div#banner {
     height: 573px;
 }
 
+div.pageToTop {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
