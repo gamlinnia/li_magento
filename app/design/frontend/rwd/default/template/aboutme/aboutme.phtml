@@ -95,7 +95,7 @@
             var image = new Image();
             var image_url = jQuery(element).css('background-image');
             image_url = image_url.match(/^url\("?(.+?)"?\)$/);
-            image.src = image_url;
+            image.src = image_url[1];
 
             jQuery(element).css({
                 "height": jQuery(this).height(),
