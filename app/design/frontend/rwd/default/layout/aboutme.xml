@@ -14,8 +14,9 @@
             <action method="addItem"><type>skin_js</type><name>js/Camera/camera.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/Camera/jquery.mobile.customized.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>css/Camera/camera.css</name></action>
-            <!-- custom css for page about me -->
+            <!-- custom css & js for page about me -->
             <action method="addCss"><stylesheet>css/aboutme/aboutme.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><name>js/aboutme/aboutme.js</name></action>
             <!-- fontawesome -->
             <action method="addCss"><stylesheet>css/font-awesome-4.5.0/css/font-awesome.min.css</stylesheet></action>
         </reference>
