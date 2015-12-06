@@ -116,7 +116,8 @@
 
     function scrollToTop () {
         jQuery('.pageToTop').click(function () {
-            jQuery(window).scrollTop(0);
+            var body = $("html, body");
+            body.stop().animate({scrollTop:0}, '500', 'swing');
         });
 
         jQuery(window).scroll(function (event) {
