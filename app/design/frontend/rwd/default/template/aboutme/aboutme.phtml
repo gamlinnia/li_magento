@@ -110,13 +110,13 @@
     }
 
     function scrollToTop () {
-        $(window).scroll(function (event) {
+        $(window).scroll(function () {
             if ($(window).scrollTop() > 10) {
                 console.log($(window).scrollTop(), 'more than 10, display');
             } else {
                 console.log($(window).scrollTop(), 'hide');
             }
-        }
+        });
     }
 
     jQuery(document).ready(function () {
