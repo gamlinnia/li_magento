@@ -109,10 +109,21 @@
         });
     }
 
+    function scrollToTop () {
+        $(window).scroll(function (event) {
+            if ($(window).scrollTop() > 10) {
+                console.log($(window).scrollTop(), 'more than 10, display');
+            } else {
+                console.log($(window).scrollTop(), 'hide');
+            }
+        }
+    }
+
     jQuery(document).ready(function () {
         updateMaxHeight();
         //If the User resizes the window, adjust the #container height
         jQuery(window).on("resize", updateMaxHeight);
+        scrollToTop();
     });
 </script>
 
