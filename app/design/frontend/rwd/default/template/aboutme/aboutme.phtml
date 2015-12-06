@@ -93,7 +93,7 @@
         var elementToUpdateMaxHeight = ["div#banner"];
         elementToUpdateMaxHeight.each(function (element) {
             var image = new Image();
-            var image_url = $(element).css('background-image');
+            var image_url = jQuery(element).css('background-image');
             image_url = image_url.match(/^url\("?(.+?)"?\)$/);
             image.src = image_url;
 
