@@ -45,6 +45,10 @@ div.pageToTop {
     z-index: 999;
 }
 
+div.pageToTop:hover {
+    opacity: 0.8;
+}
+
 .goldenrod {
     color: goldenrod;
 }
