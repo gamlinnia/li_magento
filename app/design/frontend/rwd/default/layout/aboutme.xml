@@ -8,7 +8,7 @@
     <aboutme_index_index>
         <reference name="head">
             <action method="setTitle" translate="title" module="aboutme"><title>About Me</title></action>
-            <!--<action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>-->
+            <action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
             <!-- Pixedelic Camera -->
             <action method="addItem"><type>skin_js</type><name>js/Camera/jquery.easing.1.3.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/Camera/camera.min.js</name></action>
