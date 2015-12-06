@@ -1,13 +1,7 @@
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 
 <!-- add in aboutme.xml <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/> -->
-<div class="header-language-background">
-    <div class="header-language-container">
-        <div class="store-language-container">
-            <?php echo $this->getChildHtml('store_language') ?>
-        </div>
-    </div>
-</div>
+<?php echo $this->getChildHtml('store_language') ?>
 
 
 <h2><?php echo Mage::helper('aboutme')->__('about me template') ?></h2>
@@ -56,9 +50,9 @@
 <!-- Pixedelic Camera -->
 <div style="width: 90%;margin: 0 auto;">
     <div class="camera_wrap">
-<!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/002.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-002.jpg" data-link="#"></div>-->
-<!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/003.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-003.jpg" data-link="#"></div>-->
-<!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/004.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
+        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/002.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-002.jpg" data-link="#"></div>-->
+        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/003.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-003.jpg" data-link="#"></div>-->
+        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/004.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
         <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?>img/thumb-004.jpg" data-link="#"></div>
         <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?>img/thumb-004.jpg" data-link="#"></div>
         <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?>img/thumb-004.jpg" data-link="#"></div>
