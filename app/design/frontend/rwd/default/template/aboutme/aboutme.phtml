@@ -91,11 +91,11 @@
 
     function updateMaxHeight() {
         var elementToUpdateMaxHeight = ["div#banner"];
-        for (var key in elementToUpdateMaxHeight) {
-            jQuery(elementToUpdateMaxHeight[key]).css({
+        elementToUpdateMaxHeight.each(function (element) {
+            jQuery(element).css({
                 "max-height": jQuery(this).height()
             });
-        }
+        });
     }
 
     jQuery(document).ready(function () {
