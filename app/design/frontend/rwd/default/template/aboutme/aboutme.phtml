@@ -98,6 +98,9 @@
         time: 3000
     });
 
+    //If the User resizes the window, adjust the #container height
+    jQuery(window).on("resize", updateMaxHeight);
+
     function updateMaxHeight() {
         var elementToUpdateMaxHeight = ["div#banner"];
         elementToUpdateMaxHeight.each(function (element) {
@@ -115,8 +118,6 @@
 
     jQuery(document).ready(function () {
         updateMaxHeight();
-        //If the User resizes the window, adjust the #container height
-        jQuery(window).on("resize", updateMaxHeight);
     });
 </script>
 
