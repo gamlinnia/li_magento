@@ -110,11 +110,11 @@
     }
 
     function scrollToTop () {
-        $(window).scroll(function (event) {
-            if ($(window).scrollTop() > 10) {
-                console.log($(window).scrollTop(), 'more than 10, display');
+        jQuery(window).scroll(function (event) {
+            if (jQuery(window).scrollTop() > 10) {
+                console.log(jQuery(window).scrollTop(), 'more than 10, display');
             } else {
-                console.log($(window).scrollTop(), 'hide');
+                console.log(jQuery(window).scrollTop(), 'hide');
             }
         });
     }
