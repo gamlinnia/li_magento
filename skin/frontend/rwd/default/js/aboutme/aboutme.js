@@ -7,7 +7,7 @@ function runPexedelicCamera () {
         navigationHover: true,
         pagination: false,
         portrait: true,
-        thumbnails: true,
+        thumbnails: false,
         time: 3000
     });
 }
