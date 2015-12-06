@@ -92,8 +92,14 @@
     function updateMaxHeight() {
         var elementToUpdateMaxHeight = ["div#banner"];
         elementToUpdateMaxHeight.each(function (element) {
+            image = new Image();
+            var image_url = $(element).css('background-image');
+            image_url = image_url.match(/^url\("?(.+?)"?\)$/);
+            image.src = image_url;
+
             jQuery(element).css({
-                "height": jQuery(this).height()
+                "height": jQuery(this).height(),
+                "max-height": image.height
             });
         });
     }
