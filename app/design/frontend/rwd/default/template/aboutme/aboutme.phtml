@@ -100,27 +100,19 @@
         time: 3000
     });
 
-    //If the User resizes the window, adjust the #container height
-    jQuery(window).on("resize", updateMaxHeight);
-
-    function updateMaxHeight() {
+    function updateMaxHeight () {
         var elementToUpdateMaxHeight = ["div#banner"];
         elementToUpdateMaxHeight.each(function (element) {
-            var image = new Image();
-            var image_url = jQuery(element).css('background-image');
-            image_url = image_url.match(/^url\("?(.+?)"?\)$/);
-            image.src = image_url[1];
-
-            if (image.height > 0) {
-                jQuery(element).css({
-                    "max-height": $(window).height
-                });
-            }
+            jQuery(element).css({
+                "max-height": $(window).height
+            });
         });
     }
 
     jQuery(document).ready(function () {
         updateMaxHeight();
+        //If the User resizes the window, adjust the #container height
+        jQuery(window).on("resize", updateMaxHeight);
     });
 </script>
 
