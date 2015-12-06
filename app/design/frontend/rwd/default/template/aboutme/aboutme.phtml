@@ -4,7 +4,24 @@
 <?php echo $this->getChildHtml('store_language') ?>
 
 
-<h2><?php echo Mage::helper('aboutme')->__('about me template') ?></h2>
+<header>
+    <div id="header">
+        <div class="banner-title">
+            <p>我是劉力誠<br>Liu Li-Cheng</p>
+            <h1>網頁程式設計師</h1>
+            <p>Web Developer</p>
+            <hr class="color-white">
+        </div>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#service">我的服務<br>Services</a></li>
+            <li><a href="#idx-portfolio">作品集<br>Portfolio</a></li>
+            <li><a href="#about">關於我<br>About me</a></li>
+            <li><a href="#contact">與我連絡<br>Contact me</a></li>
+        </ul>
+    </nav>
+</header>
 
 <!--$this->getFormAction() => setFormAction( Mage::getUrl('*/*/post') );-->
 <form action="<?php echo $this->getFormAction(); ?>" id="block_aboutme" method="post" class="scaffold-form">
