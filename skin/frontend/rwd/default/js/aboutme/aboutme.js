@@ -3,7 +3,7 @@ function runPexedelicCamera () {
         alignment: 'center',
         fx: 'scrollLeft',
         hover: true,
-        navigation: false,
+        navigation: true,
         navigationHover: true,
         pagination: false,
         portrait: true,
