@@ -34,6 +34,26 @@
     </nav>
 </header>
 
+<script type="text/javascript">
+    /*to enable the javascript validation, pass the form id into the class*/
+    //< ![CDATA[
+    var aboutus = new VarienForm('block_aboutme');
+    //]]>
+</script>
+
+<!-- Pixedelic Camera -->
+<div style="width: 90%;margin: 0 auto;">
+    <div class="camera_wrap">
+        <div data-src="<?php echo $this->getSkinUrl('images/aboutme/rosewill.png'); ?>"></div>
+        <div data-src="<?php echo $this->getSkinUrl('images/aboutme/magento.png'); ?>"></div>
+        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/003.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-003.jpg" data-link="#"></div>-->
+        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/004.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
+        <!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
+<!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
+<!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
+    </div>
+</div>
+
 <!--$this->getFormAction() => setFormAction( Mage::getUrl('*/*/post') );-->
 <form action="<?php echo $this->getFormAction(); ?>" id="block_aboutme" method="post" class="scaffold-form">
     <div class="fieldset">
@@ -70,28 +90,7 @@
     <div class="pageToTop cursorPointer displayNone">
         <i class="fa fa-arrow-circle-o-up fa-2x"></i>
     </div>
-
 </form>
-
-<script type="text/javascript">
-    /*to enable the javascript validation, pass the form id into the class*/
-    //< ![CDATA[
-    var aboutus = new VarienForm('block_aboutme');
-    //]]>
-</script>
-
-<!-- Pixedelic Camera -->
-<div style="width: 90%;margin: 0 auto;">
-    <div class="camera_wrap">
-        <div data-src="<?php echo $this->getSkinUrl('images/aboutme/rosewill.png'); ?>"></div>
-        <div data-src="<?php echo $this->getSkinUrl('images/aboutme/magento.png'); ?>"></div>
-        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/003.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-003.jpg" data-link="#"></div>-->
-        <!--        <div data-src="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/004.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
-        <!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
-<!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
-<!--        <div data-src="http://www.taiwan-motors.com.tw/lic/images/a1-test.jpg" data-thumb="--><?php //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'aboutme/'; ?><!--img/thumb-004.jpg" data-link="#"></div>-->
-    </div>
-</div>
 
 
 
