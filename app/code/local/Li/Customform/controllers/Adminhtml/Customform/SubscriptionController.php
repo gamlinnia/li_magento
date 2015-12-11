@@ -40,6 +40,7 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
         $this->_redirect('*/*/index');
     }
 
+    /* grid action for filter and sorting */
     public function gridAction() {
         $this->loadLayout();
         $this->getResponse()->setBody(
