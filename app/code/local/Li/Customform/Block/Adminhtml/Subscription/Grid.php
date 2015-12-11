@@ -127,11 +127,4 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         );
     }
 
-    public function gridAction() {
-        $this->loadLayout();
-        $this->getResponse()->setBody(
-            $this->getLayout()->createBlock('customform/adminhtml_subscription_grid')->toHtml()
-        );
-    }
-
 }

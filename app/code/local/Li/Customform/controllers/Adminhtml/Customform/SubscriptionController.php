@@ -40,6 +40,13 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
         $this->_redirect('*/*/index');
     }
 
+    public function gridAction() {
+        $this->loadLayout();
+        $this->getResponse()->setBody(
+            $this->getLayout()->createBlock('customform/adminhtml_subscription_grid')->toHtml()
+        );
+    }
+
     /* this method is for acl to grant admin privilege */
     protected function _isAllowed() {
         /* pass menu tree to isAllowed method */
