@@ -32,7 +32,7 @@ class Phxsolution_Formbuilder_Block_Adminhtml_Formbuilder_Edit_Tabs extends Mage
       parent::__construct();
       $this->setId('formbuilder_tabs');
 	    $this->setName('formbuilder_tabs');
-      $this->setDestElementId('edit_form');
+      $this->setDestElementId('edit_form'); /* point to Phxsolution_Formbuilder_Block_Adminhtml_Formbuilder_Edit_Form */
       $this->setTitle(Mage::helper('formbuilder')->__('Form Information'));
   }
   protected function _beforeToHtml()
