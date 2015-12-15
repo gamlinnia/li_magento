@@ -43,7 +43,7 @@
             <?php foreach ($this->getSearchableAttributes() as $_attribute): ?>
             <?php $_code = $_attribute->getAttributeCode() ?>
             <li>
-                <label for="<?php echo $_code ?>"><?php echo $this->__( getAttributeLabel($_attribute) ) ?></label>
+                <label for="<?php echo $_code ?>"><?php echo $this->__( $this->getAttributeLabel($_attribute) ) ?></label>
                 <?php switch($this->getAttributeInputType($_attribute)):
                     case 'number': ?>
                     <div class="input-range">
