@@ -82,7 +82,13 @@ $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 's
 
 /*
  * edit by Li
+ * determine magento website
  * */
-Mage::log($_SERVER['HTTP_HOST'], null, 'multistore.log');
+switch ($_SERVER['HTTP_HOST']) {
+    case 'waji.twbbs.org':
+        $mageRunCode = 'waji_website';
+        $mageRunType = 'website';
+        break;
+}
 
 Mage::run($mageRunCode, $mageRunType);
