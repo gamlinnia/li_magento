@@ -83,6 +83,6 @@ $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 's
 /*
  * edit by Li
  * */
-Mage::log($_SERVER, null, 'multistore.log');
+Mage::log($_SERVER['HTTP_HOST'], null, 'multistore.log');
 
 Mage::run($mageRunCode, $mageRunType);
