@@ -6,7 +6,6 @@
         </reference>
     </default>
     <aboutme_index_index>
-        <!--<remove name="header" />-->
         <reference name="head">
             <action method="setTitle" translate="title" module="aboutme"><title>About Me</title></action>
             <action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
@@ -15,16 +14,19 @@
             <action method="addItem"><type>skin_js</type><name>js/Camera/camera.min.js</name></action>
             <action method="addItem"><type>skin_js</type><name>js/Camera/jquery.mobile.customized.min.js</name></action>
             <action method="addItem"><type>skin_css</type><name>css/Camera/camera.css</name></action>
+            <!-- custom css & js for page about me -->
+            <action method="addCss"><stylesheet>css/aboutme/aboutme.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><name>js/aboutme/aboutme.js</name></action>
+            <!-- fontawesome -->
+            <action method="addCss"><stylesheet>css/font-awesome-4.5.0/css/font-awesome.min.css</stylesheet></action>
         </reference>
         <reference name="root">
             <action method="setTemplate">
                 <template>page/empty.phtml</template>
-                <!--<template>page/1column.phtml</template>-->
             </action>
             <action method="setHeaderTitle" translate="title" module="aboutme"><title>About Me</title></action>
         </reference>
         <reference name="content">
-            <block type="page/switch" name="store_language" as="store_language" template="page/switch/languages.phtml"/>
             <block type="aboutme/aboutme" name="block_aboutme" template="aboutme/aboutme.phtml" />
         </reference>
         <!--<remove name="footer" />-->

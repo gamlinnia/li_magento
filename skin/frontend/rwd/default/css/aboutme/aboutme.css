@@ -1,0 +1,65 @@
+.alignCenter {
+    text-align: center;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.displayNone {
+    display: none;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.form-language label {
+    color: whitesmoke;
+}
+
+.banner-title {
+    color: whitesmoke;
+}
+
+div#banner {
+    background-image: url("../../images/aboutme/banner_01.jpg");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 573px;
+}
+
+div.pageToTop {
+    border-radius: 8px;
+    background-color: grey;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    opacity: 0.9;
+
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 999;
+}
+
+div.pageToTop i {
+    line-height: 45px;
+}
+
+div.pageToTop:hover {
+    background-color: transparent;
+}
+
+.goldenrod {
+    color: goldenrod;
+}

@@ -10,7 +10,6 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         $this->setDefaultDir('DESC');
         $this->setSaveParametersInSession(true);
         $this->setUseAjax(true);
-        $this->setVarNameFilter('subscription_filter');
     }
 
     protected function _prepareCollection () {
@@ -32,7 +31,12 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
         $this->addColumn('name', array(
             'index' => 'name',
             'header' => Mage::helper('customform')->__('name'),
-            'sortable' => false
+            'sortable' => false,
+            'type'      => 'options',
+            'options'   => array(
+                'Happy' => 'Happy',
+                'John' => 'John',
+            ),
         ));
 
         $this->addColumn('email', array(
@@ -127,4 +131,5 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
                 'id'=>$row->getId())
         );
     }
+
 }
