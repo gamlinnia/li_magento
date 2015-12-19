@@ -84,9 +84,15 @@ $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 's
  * edit by Li
  * determine magento website
  * */
+/* determine magento website */
 switch ($_SERVER['HTTP_HOST']) {
-    case 'waji.twbbs.org':
+    case 'waji.ga' :
+    case 'www.waji.ga' :
         $mageRunCode = 'waji_website';
+        $mageRunType = 'website';
+        break;
+    case 'taiwan-motors.com.tw' :
+        $mageRunCode = 'taiwan_motors';
         $mageRunType = 'website';
         break;
 }
