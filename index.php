@@ -92,6 +92,7 @@ switch ($_SERVER['HTTP_HOST']) {
         $mageRunType = 'website';
         break;
     case 'taiwan-motors.com.tw' :
+    case 'www.taiwan-motors.com.tw' :
         $mageRunCode = 'taiwan_motors';
         $mageRunType = 'website';
         break;
