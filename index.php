@@ -80,4 +80,22 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 /* Run store or run website */
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
+/*
+ * edit by Li
+ * determine magento website
+ * */
+/* determine magento website */
+switch ($_SERVER['HTTP_HOST']) {
+    case 'waji.ga' :
+    case 'www.waji.ga' :
+        $mageRunCode = 'waji_website';
+        $mageRunType = 'website';
+        break;
+    case 'taiwan-motors.com.tw' :
+    case 'www.taiwan-motors.com.tw' :
+        $mageRunCode = 'taiwan_motors';
+        $mageRunType = 'website';
+        break;
+}
+
 Mage::run($mageRunCode, $mageRunType);
