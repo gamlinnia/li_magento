@@ -61,6 +61,7 @@ class Li_Customform_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtml_Blo
             'width' => '150px'
         ));
 
+        $this->addExportType('*/*/exportExcel', Mage::helper('customform')->__('Excel'));
         return parent::_prepareColumns();
     }
 

@@ -5,7 +5,9 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
     public function indexAction () {
         $this->loadLayout();
 
-        $this->_addContent($this->getLayout()->createBlock('customform/adminhtml_subscription'));
+        $this->_addContent(
+            $this->getLayout()->createBlock('customform/adminhtml_subscription')
+        );
 
         $this->renderLayout();
     }
@@ -52,6 +54,18 @@ class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adm
     protected function _isAllowed() {
         /* pass menu tree to isAllowed method */
         return Mage::getSingleton('admin/session')->isAllowed('system/customform');
+    }
+
+    public function exportCsvAction(){
+        $fileName   = 'customform.csv';
+        $grid       = $this->getLayout()->createBlock('customform/adminhtml_subscription_grid');
+        $this->_prepareDownloadResponse($fileName, $grid->getCsvFile());
+    }
+
+    public function exportExcelAction(){
+        $fileName   = 'customform.xls';
+        $grid       = $this->getLayout()->createBlock('customform/adminhtml_subscription_grid');
+        $this->_prepareDownloadResponse($fileName, $grid->getExcelFile());
     }
 
 }
