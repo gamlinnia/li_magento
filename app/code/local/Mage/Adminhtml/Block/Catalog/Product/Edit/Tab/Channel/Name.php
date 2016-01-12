@@ -40,7 +40,7 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Channel_Name extends Mage_Ad
                 'onclick' => 'return channelNameControl.addItem()',
                 'class' => 'add'
             ));
-        $button->setName('add_channel_name_item_button');
+        $button->setName('add_tier_price_item_button');
 
         $this->setChild('add_button', $button);
         return parent::_prepareLayout();
