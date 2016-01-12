@@ -33,4 +33,17 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Channel_Name extends Mage_Ad
         $this->setTemplate('catalog/product/edit/channel/name.phtml');
     }
 
+    protected function _prepareLayout() {
+        $button = $this->getLayout()->createBlock('adminhtml/widget_button')
+            ->setData(array(
+                'label' => Mage::helper('catalog')->__('Add Channel'),
+                'onclick' => 'return channelNameControl.addItem()',
+                'class' => 'add'
+            ));
+        $button->setName('add_channel_name_item_button');
+
+        $this->setChild('add_button', $button);
+        return parent::_prepareLayout();
+    }
+
 }
