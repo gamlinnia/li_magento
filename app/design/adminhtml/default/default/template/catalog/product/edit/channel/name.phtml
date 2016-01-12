@@ -1,6 +1,5 @@
 
 <?php $_htmlId      = $this->getElement()->getHtmlId() ?>
-<?php $_showWebsite = $this->isShowWebsiteColumn(); ?>
 
 
 <tr>
@@ -17,7 +16,7 @@
             </tbody>
             <tfoot>
             <tr>
-                <td <?php if (!$_showWebsite): ?>style="display:none"<?php endif; ?>></td>
+                <td></td>
                 <td colspan="4" class="a-right"><?php echo $this->getAddButtonHtml() ?></td>
             </tr>
             </tfoot>
