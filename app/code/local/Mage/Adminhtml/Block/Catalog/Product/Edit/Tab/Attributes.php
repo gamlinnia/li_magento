@@ -76,12 +76,12 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Attributes extends Mage_Admi
                 );
             }
 
-//            $tierPrice = $form->getElement('tier_price');
-//            if ($tierPrice) {
-//                $tierPrice->setRenderer(
-//                    $this->getLayout()->createBlock('adminhtml/catalog_product_edit_tab_price_tier')
-//                );
-//            }
+            $tierPrice = $form->getElement('tier_price');
+            if ($tierPrice) {
+                $tierPrice->setRenderer(
+                    $this->getLayout()->createBlock('adminhtml/catalog_product_edit_tab_price_tier')
+                );
+            }
 
             $groupPrice = $form->getElement('group_price');
             if ($groupPrice) {
