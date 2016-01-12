@@ -24,33 +24,13 @@
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-
 /**
- * Configurable product associated products in stock filter
- *
- * @category   Mage
- * @package    Mage_Adminhtml
- * @author      Magento Core Team <core@magentocommerce.com>
+ * Recurring profile attribute edit renderer
  */
-class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Super_Config_Grid_Filter_Inventory extends Mage_Adminhtml_Block_Widget_Grid_Column_Filter_Select
-{
+class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Channel_Name extends Mage_Adminhtml_Block_Catalog_Form_Renderer_Fieldset_Element {
 
-    protected function _getOptions()
-    {
-        return array(
-            array(
-                'value' =>  '',
-                'label' =>  ''
-            ),
-            array(
-                'value' =>  1,
-                'label' =>  Mage::helper('catalog')->__('In Stock')
-            ),
-            array(
-                'value' =>  0,
-                'label' =>  Mage::helper('catalog')->__('Out of Stock')
-            )
-        );
+    public function __construct() {
+        $this->setTemplate('catalog/product/edit/price/tier.phtml');
     }
 
 }

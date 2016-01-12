@@ -97,6 +97,14 @@ class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Attributes extends Mage_Admi
                 );
             }
 
+            /* added by Li, for channel tab */
+            $channelName = $form->getElement('channel_name');
+            if ($channelName) {
+                $channelName->setRenderer(
+                    $this->getLayout()->createBlock('adminhtml/catalog_product_edit_tab_channel_name')
+                );
+            }
+
             // Add new attribute button if it is not an image tab
             if (!$form->getElement('media_gallery')
                 && Mage::getSingleton('admin/session')->isAllowed('catalog/attributes/attributes')
