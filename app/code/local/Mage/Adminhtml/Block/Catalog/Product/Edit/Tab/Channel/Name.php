@@ -30,7 +30,7 @@
 class Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Channel_Name extends Mage_Adminhtml_Block_Catalog_Form_Renderer_Fieldset_Element {
 
     public function __construct() {
-        $this->setTemplate('catalog/product/edit/price/tier.phtml');
+        $this->setTemplate('catalog/product/edit/channel/name.phtml');
     }
 
 }
