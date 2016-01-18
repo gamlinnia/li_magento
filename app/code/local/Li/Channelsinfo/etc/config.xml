@@ -16,6 +16,14 @@
                 <class>Li_Channelsinfo_Helper</class>
             </channelsinfo>
         </helpers>
+        <resources>
+            <channelsinfo_setup>
+                <setup>
+                    <module>Li_Channelsinfo</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </channelsinfo_setup>
+        </resources>
     </global>
     <default>
         <channelsinfo>
