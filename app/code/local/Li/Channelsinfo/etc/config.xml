@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Li_Channelsinfo>
+            <version>0.0.1</version>
+        </Li_Channelsinfo>
+    </modules>
+    <global>
+        <blocks>
+            <channelsinfo>
+                <class>Li_Channelsinfo_Block</class>
+            </channelsinfo>
+        </blocks>
+        <helpers>
+            <channelsinfo>
+                <class>Li_Channelsinfo_Helper</class>
+            </channelsinfo>
+        </helpers>
+    </global>
+    <default>
+        <channelsinfo>
+            <channels_info>
+                <channels_list>amazon</channels_list>
+            </channels_info>
+        </channelsinfo>
+    </default>
+</config>

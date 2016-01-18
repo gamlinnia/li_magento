@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <li_channelsinfo>
+            <label>Channels Info</label>
+            <sort_order>600</sort_order>
+        </li_channelsinfo>
+    </tabs>
+    <sections>
+        <channelsinfo translate="label">
+            <label>Channel Setting</label>
+            <tab>li_channelsinfo</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <channels_info translate="label">
+                    <label>Channels Info</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <channels_list translate="label">
+                            <label>Channels List</label>
+                            <comment>List all channels, separate by comma.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </channels_list>
+                    </fields>
+                </channels_info>
+            </groups>
+        </channelsinfo>
+    </sections>
+</config>

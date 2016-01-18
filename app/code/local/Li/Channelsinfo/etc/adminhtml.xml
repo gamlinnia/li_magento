@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- acl 需設定，才不會出現404 -->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <channelsinfo translate="title">
+                                <title>Channelsinfo Index Page</title>
+                            </channelsinfo>
+                            <config>
+                                <children>
+                                    <channelsinfo translate="title">
+                                        <title>Channelsinfo Section</title>
+                                    </channelsinfo>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
