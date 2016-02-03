@@ -46,7 +46,7 @@ $installer->addAttribute('catalog_product', 'channelsinfo', array(
     'type'                       => 'varchar',
     'label'                      => 'Channels Information',
     'input'                      => 'text',
-    'backend'                    => 'catalog/product_attribute_backend_channelsinfo',
+//    'backend'                    => 'catalog/product_attribute_backend_channelsinfo',
     'required'                   => false,
     'sort_order'                 => 6,
     'global'                     => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_WEBSITE,

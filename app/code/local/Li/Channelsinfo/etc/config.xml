@@ -16,6 +16,7 @@
                 <class>Li_Channelsinfo_Helper</class>
             </channelsinfo>
         </helpers>
+
         <resources>
             <channelsinfo_setup>
                 <setup>
