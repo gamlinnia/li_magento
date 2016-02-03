@@ -7,7 +7,7 @@ $installer->startSetup();
  * Create table 'catalog/product_attribute_tier_price'
  */
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('catalog/product_attribute_channelsinfo'))
+    ->newTable($installer->getTable('catalog_product_attribute_channelsinfo'))
     ->addColumn('value_id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
         'identity'  => true,
         'nullable'  => false,
