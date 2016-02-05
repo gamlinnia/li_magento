@@ -412,6 +412,11 @@
                     <category_anchor_products_indexer_tmp>
                         <table>catalog_category_anc_products_index_tmp</table>
                     </category_anchor_products_indexer_tmp>
+
+                    <catalog_product_attribute_channelsinfo>
+                        <table>catalog_product_entity_channelsinfo</table>
+                    </catalog_product_attribute_channelsinfo>
+
                 </entities>
             </catalog_resource>
         </models>
