@@ -14,7 +14,6 @@ foreach ($attributeSetIds as $id)
     $installer->addAttributeGroup('catalog_product', $id, 'Channels', 5);
 }
 
-// Create new attribute "video_gallery"
 $installer->addAttribute('catalog_product', 'channelsinfo', array(
     'group'			=> 'Channels',
     'backend'       => 'channelsinfo/backend_channelsinfo',

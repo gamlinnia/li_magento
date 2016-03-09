@@ -13,4 +13,14 @@ class Li_Channelsinfo_Model_Backend_Channelsinfo extends Mage_Eav_Model_Entity_A
         $object->setData($attrCode, $value);
     }
 
+    public function beforeSave($object)
+    {
+
+    }
+
+    public function afterSave($object)
+    {
+
+    }
+
 }
