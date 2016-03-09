@@ -4,6 +4,8 @@ $installer = $this;
 
 $installer->startSetup();
 
+$installer->removeAttribute('catalog_product', 'channelsinfo');
+
 // Load all Attribute Sets
 $attributeSetIds = $installer->getAllAttributeSetIds($installer->getEntityTypeId('catalog_product'));
 
