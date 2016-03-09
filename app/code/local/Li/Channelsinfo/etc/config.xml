@@ -16,7 +16,11 @@
                 <class>Li_Channelsinfo_Helper</class>
             </channelsinfo>
         </helpers>
-
+        <model>
+            <channelsinfo>
+                <class>Li_Channelsinfo_Model</class>
+            </channelsinfo>
+        </model>
         <resources>
             <channelsinfo_setup>
                 <setup>
