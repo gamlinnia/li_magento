@@ -4,6 +4,7 @@ $installer = $this;
 
 $installer->startSetup();
 
+
 // Load all Attribute Sets
 $attributeSetIds = $installer->getAllAttributeSetIds($installer->getEntityTypeId('catalog_product'));
 
@@ -15,7 +16,7 @@ foreach ($attributeSetIds as $id)
 
 $installer->addAttribute('catalog_product', 'channelsinfo', array(
     'group'			=> 'Channels',
-    'backend'       => 'catalog/product_attribute_backend_channelsinfo',
+    'backend'       => 'channelsinfo/backend_channelsinfo',
     'input_renderer'=> 'channelsinfo/adminhtml_channelinfo',
     'frontend'      => '',
     'label'         => 'Channel Info',

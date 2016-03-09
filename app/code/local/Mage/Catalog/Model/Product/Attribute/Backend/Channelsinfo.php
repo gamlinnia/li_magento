@@ -6,9 +6,7 @@ class Mage_Catalog_Model_Product_Attribute_Backend_Channelsinfo extends Mage_Eav
     public function afterLoad($object)
     {
         $attrCode = $this->getAttribute()->getAttributeCode();
-        $value = array(
-            'channelsinfo' => array()
-        );
+        $value = array();
 
         $object->setData($attrCode, $value);
     }
