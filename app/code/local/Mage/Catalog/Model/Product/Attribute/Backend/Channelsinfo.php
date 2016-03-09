@@ -1,6 +1,6 @@
 <?php
 
-class Li_Channelsinfo_Model_Backend_Channelsinfo extends Mage_Eav_Model_Entity_Attribute_Backend_Abstract
+class Mage_Catalog_Model_Product_Attribute_Backend_Channelsinfo extends Mage_Eav_Model_Entity_Attribute_Backend_Abstract
 {
 
     public function afterLoad($object)
