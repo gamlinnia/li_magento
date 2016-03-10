@@ -23,7 +23,7 @@ class Li_Channelsinfo_Block_Adminhtml_Channelinfo extends Varien_Data_Form_Eleme
 //            }
 //        }
 
-        $content = Mage::getSingleton('core/layout')->createBlock('lichannelsinfo/adminhtml_channelinfo_skucontent');
+        $content = Mage::getSingleton('core/layout')->createBlock('channelsinfo_adminhtml_channelinfo_skucontent');
         $content->setId($this->getHtmlId() . '_content')
             ->setElement($this);
 
