@@ -22,8 +22,10 @@ class Li_Channelsinfo_Block_Adminhtml_Channelinfo extends Varien_Data_Form_Eleme
 //                $videoGroupId = $group->getId();
 //            }
 //        }
-        $content = Mage::app()->getLayout()->createBlock('channelsinfo/adminhtml_channelinfo_skucontent');
-//        $content = Mage::getSingleton('core/layout')->createBlock('channelsinfo/adminhtml_channelinfo_skucontent');
+
+        $content = Mage::getSingleton('core/layout')->createBlock('channelsinfo/adminhtml_channelinfo_skucontent');
+        $content->setId($this->getHtmlId() . '_content')
+            ->setElement($this);
 
         return $content->toHtml();
     }
