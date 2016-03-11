@@ -19,7 +19,7 @@ class Mage_Adminhtml_Block_Channelinfo_Skucontent extends Mage_Adminhtml_Block_W
                 ->setData(array(
                     'label' => Mage::helper('catalog')->__('Add New Option'),
                     'class' => 'add',
-                    'onclick'   => 'answer.add(this)',
+                    'onclick'   => 'channelNameControl.addItem()',
                     'id'    => 'add_new_defined_option'
                 ))
         );
