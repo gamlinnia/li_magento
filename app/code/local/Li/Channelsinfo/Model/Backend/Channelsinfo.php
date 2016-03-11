@@ -7,7 +7,7 @@ class Li_Channelsinfo_Model_Backend_Channelsinfo extends Mage_Eav_Model_Entity_A
     {
         $attrCode = $this->getAttribute()->getAttributeCode();
         $value = array(
-            'channelsinfo' => array()
+            $attrCode => array()
         );
 
         $object->setData($attrCode, $value);
