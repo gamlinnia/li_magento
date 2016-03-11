@@ -11,4 +11,9 @@ class Mage_Adminhtml_Block_Channelinfo_Skucontent extends Mage_Adminhtml_Block_W
         $this->setTemplate('channelsinfo/skucontent.phtml');
     }
 
+    public function getAddButtonHtml()
+    {
+        return $this->getChildHtml('add_button');
+    }
+
 }
