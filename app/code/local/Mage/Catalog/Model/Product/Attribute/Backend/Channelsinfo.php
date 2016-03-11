@@ -11,17 +11,17 @@ class Mage_Catalog_Model_Product_Attribute_Backend_Channelsinfo extends Mage_Eav
         );
 
         $object->setData($attrCode, $value);
-        var_dump($attrCode);
+        Mage::log('after load', null, 'channelinfo.log');
     }
 
     public function beforeSave($object)
     {
-        var_dump('before save');
+        Mage::log('before save', null, 'channelinfo.log');
     }
 
     public function afterSave($object)
     {
-        var_dump('after save');
+        Mage::log('after save', null, 'channelinfo.log');
     }
 
 }
