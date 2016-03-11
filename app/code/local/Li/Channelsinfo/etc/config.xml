@@ -19,7 +19,17 @@
         <model>
             <channelsinfo>
                 <class>Li_Channelsinfo_Model</class>
+                <resourceModel>channelsinfo_resource</resourceModel>
             </channelsinfo>
+            <!--for database-->
+            <channelsinfo_resource>
+                <class>Li_Channelsinfo_Model_Resource</class>
+                <entities>
+                    <channelsinfo>
+                        <table>catalog_product_attribute_channelsinfo</table>
+                    </channelsinfo>
+                </entities>
+            </channelsinfo_resource>
         </model>
         <resources>
             <channelsinfo_setup>

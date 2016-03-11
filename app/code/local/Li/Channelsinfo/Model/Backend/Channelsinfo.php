@@ -23,4 +23,9 @@ class Li_Channelsinfo_Model_Backend_Channelsinfo extends Mage_Eav_Model_Entity_A
 
     }
 
+    protected function _getResource()
+    {
+        return Mage::getResourceSingleton('channelsinfo/channelsinfo');
+    }
+
 }
