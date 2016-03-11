@@ -1,1 +1,101 @@
 <?php echo 'sku content' ?>
+
+
+<?php $_htmlId      = $this->getElement()->getHtmlId() ?>
+<?php $_htmlName    = $this->getElement()->getName() ?>
+<?php $channelsList = explode(',', Mage::getStoreConfig('channelsinfo/channels_info/channels_list')) ?>
+<tr>
+    <td>
+        <table cellspacing="0" class="data border" id="channel_name_table">
+            <colgroup>
+                <col width="135">
+                <col width="120">
+                <col width="1">
+            </colgroup>
+            <thead>
+            <tr class="headings">
+                <th><?php echo Mage::helper('catalog')->__('Channel Name') ?></th>
+                <th><?php echo Mage::helper('catalog')->__('Product Name') ?></th>
+                <th><?php echo Mage::helper('catalog')->__('Action') ?></th>
+            </tr>
+            </thead>
+            <tbody id="<?php echo $_htmlId ?>_container">
+            <?php foreach ($channelsList as $eachChannel): ?>
+                <tr>
+                    <td><?php echo $eachChannel ?></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            <?php endforeach ?>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="2" class="a-right"><?php echo $this->getAddButtonHtml() ?></td>
+            </tr>
+            </tfoot>
+        </table>
+
+    </td>
+</tr>
+
+
+<script type="text/javascript">
+    var channelNameRowTemplate = '<tr>'
+        + '<td>'
+        + '<select class="input-text required-entry" name="<?php echo $_htmlName ?>[{{index}}][channel]" id="channel_name_row_{{index}}_channel">'
+        + '<option value="">Select channel</option>'
+        <?php foreach ($channelsList as $eachChannel): ?>
+        + '<option value="<?php echo $eachChannel ?>"><?php echo $this->jsQuoteEscape($this->escapeHtml($eachChannel)) ?></option>'
+        <?php endforeach ?>
+        + '</select></td>'
+        + '<td><input class=" input-text required-entry" type="text" name="<?php echo $_htmlName ?>[{{index}}][channel_name]" value="{{channel_name}}" id="channel_name_row_{{index}}_channel_name" /></td>'
+        + '<td class="last"><input type="hidden" name="<?php echo $_htmlName ?>[{{index}}][delete]" class="delete" value="" id="channel_name_row_{{index}}_delete" />'
+        + '<button title="Delete Tier" type="button" class="scalable delete icon-btn delete-product-option" id="channel_name_row_{{index}}_delete_button" onclick="return channelNameControl.deleteItem(event);">'
+        + '<span><span><span>Delete</span></span></span></button></td>'
+        + '</tr>';
+
+    var channelNameControl = {
+        template: new Template(channelNameRowTemplate, new RegExp('(^|.|\\r|\\n)({{\\s*(\\w+)\\s*}})', "")),
+        itemsCount: 0,
+        addItem : function () {
+            var data = {
+                channel: '',
+                channel_name: '',
+                index: this.itemsCount++
+            };
+
+            if (arguments.length >= 2) {
+                data.channel = arguments[0];
+                data.channel_name = arguments[1];
+            }
+
+            Element.insert($('<?php echo $_htmlId ?>_container'), {
+                bottom : this.template.evaluate(data)
+            });
+
+            $('channel_name_row_' + data.index + '_channel').value = data.channel;
+            $('channel_name_row_' + data.index + '_channel_name').value    = data.channel_name;
+
+            $('<?php echo $_htmlId ?>_container').select('input', 'select').each(function(el){ Event.observe(el, 'change', el.setHasChanges.bind(el)); });
+        },
+        disableElement: function(el) {
+            el.disabled = true;
+            el.addClassName('disabled');
+        },
+        deleteItem: function(event) {
+            var tr = Event.findElement(event, 'tr');
+            if (tr) {
+                Element.select(tr, '.delete').each(function(elem){elem.value='1'});
+                Element.select(tr, ['input', 'select']).each(function(elem){elem.hide()});
+                Element.hide(tr);
+                Element.addClassName(tr, 'no-display template');
+            }
+            return false;
+        }
+    };
+    console.log('<?php echo $this->getElement()->getValue() ?>');
+    <?php foreach ($this->getValues() as $_item): ?>
+    //    channelNameControl.addItem('<?php //echo $_item['channel'] ?>//', '<?php //echo $_item['channelsinfov2'] ?>//');
+    <?php endforeach; ?>
+</script>
