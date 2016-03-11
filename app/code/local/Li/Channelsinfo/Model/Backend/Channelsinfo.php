@@ -11,21 +11,17 @@ class Li_Channelsinfo_Model_Backend_Channelsinfo extends Mage_Eav_Model_Entity_A
         );
 
         $object->setData($attrCode, $value);
+        var_dump($attrCode);
     }
 
     public function beforeSave($object)
     {
-
+        var_dump('before save');
     }
 
     public function afterSave($object)
     {
-
-    }
-
-    protected function _getResource()
-    {
-        return Mage::getResourceSingleton('channelsinfo/channelsinfo');
+        var_dump('after save');
     }
 
 }
