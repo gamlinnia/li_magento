@@ -1,0 +1,23 @@
+<config>
+    <modules>
+        <Li_Customertab>
+            <version>0.0.1</version>
+        </Li_Customertab>
+    </modules>
+    <adminhtml>
+        <layout>
+            <updates>
+                <customertab>
+                    <file>customertab.xml</file>
+                </customertab>
+            </updates>
+        </layout>
+    </adminhtml>
+    <global>
+        <blocks>
+            <customertab>
+                <class>Li_Customertab_Block</class>
+            </customertab>
+        </blocks>
+    </global>
+</config>

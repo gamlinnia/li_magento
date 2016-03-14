@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Li_Customertab>
+            <active>true</active>
+            <codepool>local</codepool>
+        </Li_Customertab>
+    </modules>
+</config>
