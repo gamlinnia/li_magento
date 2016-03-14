@@ -4,7 +4,7 @@
         <reference name="customer_edit_tabs">
             <action method="addTab">
                 <name>li_customertab_customer_edit_tab_productregistrationtab</name>
-                <block>li_customertab_customer_edit_tab_productregistrationtab</block>
+                <block>customertab/adminhtml_customer_edit_tab_productregistrationtab</block>
             </action>
         </reference>
     </adminhtml_customer_edit>
