@@ -16,7 +16,7 @@
                 <class>Li_Channelsinfo_Helper</class>
             </channelsinfo>
         </helpers>
-        <model>
+        <models>
             <channelsinfo>
                 <class>Li_Channelsinfo_Model</class>
                 <resourceModel>channelsinfo_resource</resourceModel>
@@ -30,7 +30,7 @@
                     </channelsinfo>
                 </entities>
             </channelsinfo_resource>
-        </model>
+        </models>
         <resources>
             <channelsinfo_setup>
                 <setup>
