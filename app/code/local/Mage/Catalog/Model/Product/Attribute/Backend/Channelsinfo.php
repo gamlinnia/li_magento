@@ -27,12 +27,19 @@ class Mage_Catalog_Model_Product_Attribute_Backend_Channelsinfo extends Mage_Eav
 
     public function beforeSave($object)
     {
-        Mage::log('before save', null, 'channelinfo.log');
+        $channelsinfo = Mage::getModel('channelsinfo/channelsinfo');
+        $channelsinfo->setData(array(
+            'entity_id' => 8,
+            'channel' => 'amazon',
+            'value' => 'yahoo',
+            'attribute' => 'testAttr'
+        ));
+        $channelsinfo->save();
     }
 
     public function afterSave($object)
     {
-        Mage::log('after save', null, 'channelinfo.log');
+
     }
 
 }
