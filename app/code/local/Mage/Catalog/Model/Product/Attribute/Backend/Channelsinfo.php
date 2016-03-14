@@ -5,10 +5,21 @@ class Mage_Catalog_Model_Product_Attribute_Backend_Channelsinfo extends Mage_Eav
 
     public function afterLoad($object)
     {
-        $attrCode = $this->getAttribute()->getAttributeCode();
-        $value = array(
-            $attrCode => array('test', 'test123')
-        );
+        $attrCode = $this->getAttribute()->getAttributeCode();      //  $attrCode = channelsinfo
+        $collection = Mage::getModel('channelsinfo/channelsinfo')->getCollection();
+
+        $value = array();
+
+        foreach ($collection as $each) {
+            $eachAttribute = $each->getData('attribute');
+            $eachValue = $each->getData('value');
+            $eachChannel = $each->getData('channel');
+            $value[] = array(
+                'attribute' => $eachAttribute,
+                'value' => $eachValue,
+                'channel' => $eachChannel
+            );
+        }
 
         $object->setData($attrCode, $value);
         Mage::log('after load', null, 'channelinfo.log');
