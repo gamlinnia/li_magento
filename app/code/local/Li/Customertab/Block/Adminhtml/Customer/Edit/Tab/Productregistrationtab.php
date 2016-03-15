@@ -2,7 +2,7 @@
 
 class Li_Customertab_Block_Adminhtml_Customer_Edit_Tab_Productregistrationtab extends Mage_Adminhtml_Block_Template implements Mage_Adminhtml_Block_Widget_Tab_Interface
 {
-    public function __construct ()
+    public function _construct ()
     {
         parent::_construct();
         $this->setTemplate('customertab/productregistrationtab.phtml');
