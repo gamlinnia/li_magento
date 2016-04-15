@@ -26,7 +26,7 @@
                     <modules>
                         <!-- url: admin/{{module_name}}_{{action_controller}} -->
                         <extendcontroller before="Mage_Adminhtml">Li_Extendcontroller_Adminhtml</extendcontroller>
-                        <frontName>orderprint</frontName>
+                        <frontName>extendcontroller</frontName>
                     </modules>
                 </args>
             </adminhtml>
