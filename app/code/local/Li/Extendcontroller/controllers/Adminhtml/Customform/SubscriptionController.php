@@ -1,6 +1,6 @@
 <?php
 
-class Li_Customform_Adminhtml_Customform_SubscriptionController extends Mage_Adminhtml_Controller_Action {
+class Li_Extendcontroller_Adminhtml_Customform_SubscriptionController extends Mage_Adminhtml_Controller_Action {
 
     public function indexAction () {
         $this->loadLayout();
