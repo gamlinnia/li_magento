@@ -11,12 +11,13 @@
                 <class>Li_Extendcontroller_Helper</class>
             </extendcontroller>
         </helpers>
-        <!--<rewrite>-->
-            <!--<module_catalog_product>-->
-                <!--<from><![CDATA[#^/.*/catalog_product/#]]></from>-->
+        <rewrite>
+            <li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
+                <from><![CDATA[#^/.*/catalog_product/#]]></from>
                 <!--<to>/extendcontroller_subscription/</to>-->
-            <!--</module_catalog_product>-->
-        <!--</rewrite>-->
+                <to>/orderprint/adminhtml_extendcontroller_subscription/</to> <!-- SilkSoftware_RewriteMagento_Adminhtml_Catalog_ProductController  -->
+            </li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
+        </rewrite>
     </global>
     <admin>
         <routers>
@@ -25,6 +26,7 @@
                     <modules>
                         <!-- url: admin/{{module_name}}_{{action_controller}} -->
                         <extendcontroller before="Mage_Adminhtml">Li_Extendcontroller_Adminhtml</extendcontroller>
+                        <frontName>orderprint</frontName>
                     </modules>
                 </args>
             </adminhtml>
