@@ -71,7 +71,6 @@
                 <use>standard</use>
                 <args>
                     <module>Li_Customform</module>
-                    <frontName>customform</frontName>
                 </args>
             </customform>
         </routers>

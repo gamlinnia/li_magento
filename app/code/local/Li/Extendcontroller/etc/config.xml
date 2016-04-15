@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Li_Extendcontroller>
+            <version>0.0.1</version>
+        </Li_Extendcontroller>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <!-- url: admin/{{module_name}}_{{action_controller}} -->
+                        <extendcontroller before="Mage_Adminhtml">Li_Extendcontroller_Adminhtml</extendcontroller>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <extendcontroller>
+                <use>standard</use>
+                <args>
+                    <module>Li_Extendcontroller</module>
+                    <frontName>extendcontroller</frontName>
+                </args>
+            </extendcontroller>
+        </routers>
+        <layout>
+            <updates>
+                <extendcontroller>
+                    <!--file in theme-->
+                    <file>extendcontroller.xml</file>
+                </extendcontroller>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Li_Extendcontroller>
+                    <files>
+                        <default>Li_Extendcontroller.csv</default>
+                    </files>
+                </Li_Extendcontroller>
+            </modules>
+        </translate>
+    </frontend>
+</config>
