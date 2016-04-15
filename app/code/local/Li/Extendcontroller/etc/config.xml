@@ -14,8 +14,8 @@
         <rewrite>
             <li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
                 <from><![CDATA[#^/.*/catalog_product/#]]></from>
-                <!--<to>/extendcontroller_subscription/</to>-->
-                <to>/orderprint/adminhtml_extendcontroller_subscription/</to> <!-- SilkSoftware_RewriteMagento_Adminhtml_Catalog_ProductController  -->
+                <to>/extendcontroller/adminhtml_catalog_product</to>
+                <!--<to>/orderprint/adminhtml_extendcontroller_subscription/</to>
             </li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
         </rewrite>
     </global>
