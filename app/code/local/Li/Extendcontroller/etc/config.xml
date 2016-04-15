@@ -11,6 +11,12 @@
                 <class>Li_Extendcontroller_Helper</class>
             </extendcontroller>
         </helpers>
+        <rewrite>
+            <module_catalog_product>
+                <from><![CDATA[#^/.*/catalog_product/#]]></from>
+                <to>/extendcontroller/adminhtml_extendcontroller_subscription/</to>
+            </module_catalog_product>
+        </rewrite>
     </global>
     <admin>
         <routers>
