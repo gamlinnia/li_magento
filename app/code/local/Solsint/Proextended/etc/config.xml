@@ -11,7 +11,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <Solsint_Proextended before="Mage_Adminhtml">Solsint_Proextended</Solsint_Proextended>
+                        <proextended before="Mage_Adminhtml">Solsint_Proextended</proextended>
                     </modules>
                 </args>
             </adminhtml>
