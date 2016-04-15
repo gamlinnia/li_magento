@@ -1,6 +1,6 @@
 <?php
 
-class Li_Customform_IndexController extends Mage_Core_Controller_Front_Action {
+class Li_Extendcontroller_IndexController extends Mage_Core_Controller_Front_Action {
 
     const XML_PATH_EMAIL_RECIPIENT  = 'contacts/email/recipient_email';
     const XML_PATH_EMAIL_SENDER     = 'contacts/email/sender_email_identity';
