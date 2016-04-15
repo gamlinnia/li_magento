@@ -8,4 +8,9 @@ class Li_Extendcontroller_Adminhtml_Extendcontroller_SubscriptionController exte
         echo '456';
     }
 
+    public function newAction()
+    {
+         echo "done"; exit;
+    }
+
 }
