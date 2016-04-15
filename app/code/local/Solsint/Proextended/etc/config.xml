@@ -7,12 +7,12 @@
     </modules>
     <frontend>
         <routers>
-            <rewritemagento>
+            <proextended>
                 <args>
                     <module>SilkSoftware_RewriteMagento</module>
                     <frontName>proextended</frontName>
                 </args>
-            </rewritemagento>
+            </proextended>
         </routers>
     </frontend>
     <admin>
