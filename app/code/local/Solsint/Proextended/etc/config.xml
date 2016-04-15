@@ -5,24 +5,15 @@
             <version>0.1.0</version>
         </Solsint_Proextended>
     </modules>
-
     <admin>
         <routers>
             <adminhtml>
                 <args>
                     <modules>
-                        <Solsint_Proextended before="Mage_Adminhtml">Solsint_Proextended</Solsint_Proextended>
+                        <proextended before="Mage_Adminhtml">Solsint_Proextended</proextended>
                     </modules>
                 </args>
             </adminhtml>
         </routers>
     </admin>
-    <global>
-        <rewrite>
-            <module_catalog_product>
-                <from><![CDATA[#^/.*/catalog_product/#]]></from>
-                <to>/proextended/adminhtml_catalog_product/</to>
-            </module_catalog_product>
-        </rewrite>
-    </global>
 </config>
