@@ -11,13 +11,13 @@
                 <class>Li_Extendcontroller_Helper</class>
             </extendcontroller>
         </helpers>
-        <rewrite>
-            <li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
-                <from><![CDATA[#^/.*/catalog_product/new/#]]></from>
-                <to>/extendcontroller/adminhtml_catalog_product/new/</to>
+        <!--<rewrite>-->
+            <!--<li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>-->
+                <!--<from><![CDATA[#^/.*/catalog_product/new/#]]></from>-->
+                <!--<to>/extendcontroller/adminhtml_catalog_product/new/</to>-->
                 <!--<to>/orderprint/adminhtml_extendcontroller_subscription/</to>-->
-            </li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>
-        </rewrite>
+            <!--</li_extendcontroller_adminhtml_extendcontroller_subscriptioncontroller>-->
+        <!--</rewrite>-->
     </global>
     <admin>
         <routers>
