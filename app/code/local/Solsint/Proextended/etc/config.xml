@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Solsint_Proextended>
+            <version>0.1.0</version>
+        </Solsint_Proextended>
+    </modules>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Solsint_Proextended before="Mage_Adminhtml">Solsint_Proextended</Solsint_Proextended>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+</config>
