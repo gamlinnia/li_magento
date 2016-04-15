@@ -5,6 +5,16 @@
             <version>0.1.0</version>
         </Solsint_Proextended>
     </modules>
+    <frontend>
+        <routers>
+            <rewritemagento>
+                <args>
+                    <module>SilkSoftware_RewriteMagento</module>
+                    <frontName>proextended</frontName>
+                </args>
+            </rewritemagento>
+        </routers>
+    </frontend>
     <admin>
         <routers>
             <adminhtml>
