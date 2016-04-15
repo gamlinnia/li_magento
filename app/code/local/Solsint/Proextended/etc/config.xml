@@ -17,5 +17,12 @@
             </adminhtml>
         </routers>
     </admin>
-
+    <global>
+        <rewrite>
+            <module_catalog_product>
+                <from><![CDATA[#^/.*/catalog_product/#]]></from>
+                <to>/proextended/adminhtml_catalog_product/</to>
+            </module_catalog_product>
+        </rewrite>
+    </global>
 </config>
