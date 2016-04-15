@@ -5,6 +5,13 @@
             <version>0.0.1</version>
         </Li_Extendcontroller>
     </modules>
+    <global>
+        <helpers>
+            <extendcontroller>
+                <class>Li_Extendcontroller_Helper</class>
+            </extendcontroller>
+        </helpers>
+    </global>
     <admin>
         <routers>
             <adminhtml>
