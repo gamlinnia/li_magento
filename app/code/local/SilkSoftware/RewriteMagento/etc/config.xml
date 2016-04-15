@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SilkSoftware_RewriteMagento>
+            <version>0.1.0</version>
+        </SilkSoftware_RewriteMagento>
+    </modules>
+    <frontend>
+        <routers>
+            <rewritemagento>
+                <use>standard</use>
+                <args>
+                    <module>SilkSoftware_RewriteMagento</module>
+                    <frontName>rewritemagento</frontName>
+                </args>
+            </rewritemagento>
+        </routers>
+    </frontend>
+    <global>
+        <rewrite>
+            <silksoftware_rewritemagento_adminhtml_catalog_productcontroller>
+                <from><![CDATA[#^/rwAdMin/catalog_product/#]]></from> <!-- Mage_Adminhtml_Catalog_ProductController  -->
+                <to>/rewritemagento/adminhtml_catalog_product/</to> <!-- SilkSoftware_RewriteMagento_Adminhtml_Catalog_ProductController  -->
+            </silksoftware_rewritemagento_adminhtml_catalog_productcontroller>
+        </rewrite>
+        <helpers>
+            <rewritemagento>
+                <class>SilkSoftware_RewriteMagento_Helper</class>
+            </rewritemagento>
+        </helpers>
+        <blocks>
+            <rewritemagento>
+                <class>SilkSoftware_RewriteMagento_Block</class>
+            </rewritemagento>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tabs>SilkSoftware_RewriteMagento_Block_Adminhtml_Catalog_Product_Edit_Tabs</catalog_product_edit_tabs>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <module>SilkSoftware_RewriteMagento</module>
+                    <frontName>admin_rewritemagento</frontName>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config> 
