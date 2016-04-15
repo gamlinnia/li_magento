@@ -14,7 +14,7 @@
         <rewrite>
             <module_catalog_product>
                 <from><![CDATA[#^/.*/catalog_product/#]]></from>
-                <to>/extendcontroller/adminhtml_extendcontroller_subscription/</to>
+                <to>/extendcontroller_subscription/</to>
             </module_catalog_product>
         </rewrite>
     </global>
